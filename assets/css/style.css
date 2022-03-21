@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1, h2, 
+figcaption {
+  text-align: center;
+  margin: 16px auto;
+  font-weight: bold;
+}
+p:first-letter,
+h2:first-letter, 
+figcaption:first-letter, 
+label{
+  text-transform: capitalize;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input {
+  flex-grow: 1;
+}
+button.btn {
+  background: #3867d6;
+  width: 200px;
+  display: block;
+  margin: 9px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+button.btn:active {
+  background: #3C427C;
+}
+.icon {
+  padding: 10px;
+  background: #3867d6;
+  border-radius: 5px;
+}
+
+
+
+
+section#testimonial {
+  text-align: center;
+  padding: 20px;
+}
+section#testimonial > summary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+section#testimonial > summary div.testimony {
+  background: #3867d6;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+  flex-basis: 200px;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+section#testimonial > summary div.testimony::before {
+  content: "";
+  background: inherit;
+  padding: 6px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transform: rotate(50deg);
+}
+section#testimonial > summary div.customer {
+  position: absolute;
+  color: #000;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+section#testimonial img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+section#contact-us {
+  padding: 30px;
+  color: #fff;
+  background: #1B1E42;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section#contact-us > summary {
+  align-self: flex-start;
+}
+section#contact-us > summary > div.detail {
+  margin: 20px auto;
+}
+section#contact-us > summary > div.detail > div {
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+section#contact-us > summary > div.detail > div > a {
+  flex-grow: 1;
+}
+section#contact-us > summary > div.detail > div:hover {
+  border: 1px solid #3867d6;
+}
+section#contact-us > form {
+  background: #fff;
+  border-radius: 5px;
+  color: #000;
+  padding: 10px;
+  margin: 16px auto;
+  flex-basis: 350px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.3);
+}
+section#contact-us > form > div {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  border: 0.5px solid;
+  outline: none;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+
+section#contact-us > form input, textarea {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+section#contact-us > form > div:hover 
+{
+  box-shadow: 1px 2px 10px rgba(0,0,255,0.3);
+  outline: #3867d6 solid 1px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+footer ul {
+  list-style: none;
+  margin: 8vh auto;
+  border-left: 1px solid #FFFFFF;
+}
+footer > section:first-child {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+footer > section:last-child > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer  section  p {
+  font-size: smaller;
+  font-weight: 300;
+}
+
+footer section h3 {
+  font-size: xx-large;
+  padding: 20px;
+}
+
+
+
+footer section div {
+  margin: 8px;
+}
+
+footer ul li {
+  margin: 10px;
+  text-transform: capitalize;
+  padding: 2px 1rem;
+}
+footer ul li:hover > span {
+  width: 100%;
+  padding:  1px;
+}
+
+footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer ul li span {
+  background: #3867d6;
+  display: block;
+  border-radius: 5px;
+  width: 0;
+  transition: width 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  margin-top: 5px;
+}
+
+@media (min-width: 824px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
