@@ -1,36 +1,3 @@
-function increaseHr(event) {
-
-    document.getElementsByTagName("hr")[
-      event.target.lastChild.previousSibling.id
-    ].style.width = "45px";
-    document.getElementsByTagName("hr")[
-        event.target.lastChild.previousSibling.id
-    ].style.visibility = "visible";
-    if (event.target.lastChild.previousSibling.id == "3") {
-      document.getElementsByTagName("hr")[
-        event.target.lastChild.previousSibling.id
-      ].style.width = "65px";
-    }
-    if (event.target.lastChild.previousSibling.id == "4") {
-      document.getElementsByTagName("hr")[
-        event.target.lastChild.previousSibling.id
-      ].style.width = "80px";
-    }
-    if (event.target.lastChild.previousSibling.id == "2") {
-      document.getElementsByTagName("hr")[
-        event.target.lastChild.previousSibling.id
-      ].style.width = "40px";
-    }
-  }
-  function decreaseHr(event) {
-    document.getElementsByTagName("hr")[
-      event.target.lastChild.previousSibling.id
-    ].style.width = "0px";
-    document.getElementsByTagName("hr")[
-        event.target.lastChild.previousSibling.id
-    ].style.visibility = "hidden";
-  }
-
 
 function changeOrientation(){ 
     if(screen.width<700){
@@ -47,6 +14,8 @@ function changeOrientation(){
     document.querySelector('.listed-items').style.visibility='hidden'
     document.getElementsByTagName('header')[0].style.height='0vh'
 }
+
+
 function dropDown(){
     if(document.getElementsByTagName('header')[0].style.height==='110vh'){
     document.getElementsByTagName('header')[0].style.height='0vh'
